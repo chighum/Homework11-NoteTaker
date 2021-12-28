@@ -5,7 +5,7 @@ const fs = require("fs");
 const { v4: uuid } = require("uuid");
 
 // Set up port on localhost:3001
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 const app = express();
 

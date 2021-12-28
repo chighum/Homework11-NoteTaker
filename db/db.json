@@ -1,1 +1,7 @@
-[{"title":"Charlie","text":"is very cool","id":"4ebb3312-7e7e-4975-a783-01d26e0a4bc9"}]
+[
+  {
+    "title": "Test Title",
+    "text": "Sample note text",
+    "id": "f1930564-1387-4da5-bb2c-102ab24c51f0"
+  }
+]
