@@ -2,6 +2,7 @@
 const express = require("express");
 const path = require("path");
 const fs = require("fs");
+const { v4: uuid } = require("uuid");
 
 // Set up port on localhost:3001
 const PORT = 3001;
@@ -35,7 +36,7 @@ app.get("/api/notes", (req, res) => {
 // POST route for api/notes
 app.post("/api/notes", (req, res) => {
   const noteInput = req.body;
-  // id?
+  noteInput.id = uuid();
   fs.readFile("./db/db.json", (err, data) => {
     if (err) throw err;
     let storedNotes = JSON.parse(data);
